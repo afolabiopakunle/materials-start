@@ -12,6 +12,5 @@ export class PostCreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  panelOpenState = false;
 
 }

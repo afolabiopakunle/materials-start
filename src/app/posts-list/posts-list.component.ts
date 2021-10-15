@@ -12,4 +12,6 @@ export class PostsListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  panelOpenState = false;
+
 }
