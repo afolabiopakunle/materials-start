@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MaterialsModule} from "./materials/materials.module";
+import { PostCreateComponent } from './post-create/post-create.component';
+import { PostsListComponent } from './posts-list/posts-list.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PostCreateComponent,
+    PostsListComponent
   ],
   imports: [
     BrowserModule,
