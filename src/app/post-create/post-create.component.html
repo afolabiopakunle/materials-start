@@ -1,7 +1,14 @@
-<mat-card>
-  <mat-card-title>Create Posts</mat-card-title>
-  <mat-form-field appearance="fill">
-    <mat-label MatFormFieldControl="title">Input</mat-label>
-    <input matInput>
-  </mat-form-field>
-</mat-card>
+<div class="w-50">
+  <mat-card>
+    <mat-card-title class="p-2">Create Posts</mat-card-title>
+    <mat-form-field appearance="fill">
+      <mat-label MatFormFieldControl="title">Title</mat-label>
+      <input [(ngModel)]="title" matInput>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Content</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+  </mat-card>
+</div>
+<p>{{title}}</p>
