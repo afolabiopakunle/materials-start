@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {PostModel} from "../shared/post.model";
 
 @Component({
   selector: 'app-posts-list',
@@ -13,5 +14,5 @@ export class PostsListComponent implements OnInit {
   }
 
   panelOpenState = false;
-
+  @Input() post!: PostModel;
 }

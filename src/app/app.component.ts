@@ -8,6 +8,9 @@ import {PostModel} from "./shared/post.model";
 })
 export class AppComponent {
 
+  sentPost(data: PostModel) {
+    this.posts.push(data)
+  }
   posts: PostModel[] = [
 
   ]

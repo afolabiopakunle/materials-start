@@ -7,8 +7,9 @@
     </mat-form-field>
     <mat-form-field class="example-full-width" appearance="fill">
       <mat-label>Content</mat-label>
-      <textarea matInput></textarea>
+      <textarea [(ngModel)]="content" matInput></textarea>
     </mat-form-field>
+    <button mat-raised-button color="primary" (click)="submitPost()">Submit</button>
   </mat-card>
 </div>
 <p>{{title}}</p>
